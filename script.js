@@ -1,11 +1,15 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination]);
-
-// init Swiper:
-const swiper = new Swiper('.swiper');
+new Swiper('.swiper', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+    }
+})
