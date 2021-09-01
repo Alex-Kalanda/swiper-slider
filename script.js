@@ -8,8 +8,4 @@ new Swiper('.swiper', {
         clickable: true,
         dynamicBullets: true,
     },
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-    }
 })
